@@ -8,3 +8,4 @@ opt.splitbelow = true
 opt.termguicolors = true
 --[[ opt.cursorline = true ]]
 opt.updatetime = 0
+opt.history = 0

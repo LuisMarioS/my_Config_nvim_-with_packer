@@ -1,5 +1,4 @@
 require('nvim-autopairs').setup()
-require('colorizer').setup()
 require('lualine').setup {
     sections = {
         lualine_x = { 'filetype' }
