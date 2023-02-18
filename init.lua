@@ -10,6 +10,7 @@ require 'plugins/telescope'
 require 'plugins/tokyonight'
 require 'plugins/bufferline'
 require 'plugins/treesitter'
+require 'plugins/colorizer'
 
 vim.cmd [[color tokyonight]]
 
@@ -54,4 +55,4 @@ return require('packer').startup(function(use)
         'folke/tokyonight.nvim',
         'MunifTanjim/nui.nvim'
     }
-end)
+end) 
