@@ -1,6 +1,4 @@
 local cmp = require('cmp')
-local lsp = require('lspconfig')
-require'luasnip'.filetype_extend("ruby", {"rails"})
 
 cmp.setup({
     mapping = cmp.mapping.preset.insert({
@@ -36,30 +34,3 @@ cmp.setup({
         end,
     },
 })
-
-local capabilities = require('cmp_nvim_lsp').default_capabilities()
-
-lsp.clangd.setup({
-    capabilities = capabilities,
-})
-
-local lsp_flags = {
-    -- This is the default in Nvim 0.7+
-    debounce_text_changes = 150,
-}
-lsp['pyright'].setup{
-    on_attach = on_attach,
-    flags = lsp_flags,
-}
-lsp['tsserver'].setup{
-    on_attach = on_attach,
-    flags = lsp_flags,
-}
-lsp['rust_analyzer'].setup{
-    on_attach = on_attach,
-    flags = lsp_flags,
-    -- Server-specific settings...
-    settings = {
-      ["rust-analyzer"] = {}
-    }
-}

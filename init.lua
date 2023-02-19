@@ -11,6 +11,7 @@ require 'plugins/tokyonight'
 require 'plugins/bufferline'
 require 'plugins/treesitter'
 require 'plugins/colorizer'
+require 'plugins/lsp'
 
 vim.cmd [[color tokyonight]]
 
