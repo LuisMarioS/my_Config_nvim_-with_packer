@@ -53,6 +53,7 @@ return require('packer').startup(function(use)
             require("copilot").setup({})
         end ]]
         'folke/tokyonight.nvim',
-        'MunifTanjim/nui.nvim'
+        'MunifTanjim/nui.nvim',
+        'williamboman/mason-lspconfig.nvim',
     }
-end) 
+end)
