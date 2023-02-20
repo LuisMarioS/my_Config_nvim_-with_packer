@@ -12,7 +12,7 @@ require 'plugins/bufferline'
 require 'plugins/treesitter'
 require 'plugins/colorizer'
 require 'plugins/lsp'
-require("plugins/neotree")
+require 'plugins/neotree'
 
 vim.cmd [[color tokyonight]]
 

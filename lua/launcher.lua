@@ -7,8 +7,6 @@ require('lualine').setup {
 require('gitsigns').setup()
 require('Comment').setup()
 require('mason').setup()
---require('lazygit').setup()
 require("luasnip.loaders.from_vscode").lazy_load()
-require('bufferline').setup()
 require('nvim-ts-autotag').setup()
 require('mason-lspconfig').setup()
