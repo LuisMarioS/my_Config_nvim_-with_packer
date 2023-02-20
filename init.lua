@@ -12,6 +12,7 @@ require 'plugins/bufferline'
 require 'plugins/treesitter'
 require 'plugins/colorizer'
 require 'plugins/lsp'
+require("plugins/neotree")
 
 vim.cmd [[color tokyonight]]
 
@@ -56,5 +57,6 @@ return require('packer').startup(function(use)
         'folke/tokyonight.nvim',
         'MunifTanjim/nui.nvim',
         'williamboman/mason-lspconfig.nvim',
+        --[[ 'petertriho/cmp-git' ]]
     }
 end)

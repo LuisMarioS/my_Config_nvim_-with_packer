@@ -28,9 +28,32 @@ cmp.setup({
     sources = {
         { name = 'luasnip', option = { show_autosnippets = true } },
         { name = 'path' },
-        { name = "buffer" },
         { name = 'nvim_lsp' },
         { name = 'nvim_lua' },
-        { name = "cmdline" }
+        { name = 'buffer' }
     },
+})
+
+cmp.setup.cmdline(':', {
+    mapping = cmp.mapping.preset.cmdline(),
+    sources = cmp.config.sources({
+        { name = 'path' }
+    }, {
+        { name = 'cmdline' }
+    })
+})
+
+cmp.setup.cmdline({ '/', '?' }, {
+    mapping = cmp.mapping.preset.cmdline(),
+    sources = {
+        { name = 'buffer' }
+    }
+})
+
+cmp.setup.filetype('gitcommit', {
+    sources = cmp.config.sources({
+        { name = 'cmp_git' },
+    }, {
+        { name = 'buffer' },
+    })
 })
