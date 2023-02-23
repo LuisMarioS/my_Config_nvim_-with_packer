@@ -58,5 +58,6 @@ return require('packer').startup(function(use)
         'MunifTanjim/nui.nvim',
         'williamboman/mason-lspconfig.nvim',
         --[[ 'petertriho/cmp-git' ]]
+        'preservim/tagbar',
     }
 end)

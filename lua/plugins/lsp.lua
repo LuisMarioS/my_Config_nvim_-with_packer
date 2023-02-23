@@ -45,6 +45,6 @@ lsp.java_language_server.setup {
 lsp.jdtls.setup {
     capabilities = capabilities
 }
-lsp.pylsp.setup {
+--[[ lsp.pylsp.setup {
     capabilities = capabilities
-}
+} ]]
