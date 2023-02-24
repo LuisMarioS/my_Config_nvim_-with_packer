@@ -1,4 +1,3 @@
-require('nvim-autopairs').setup()
 require('lualine').setup {
     sections = {
         lualine_x = { 'filetype' }

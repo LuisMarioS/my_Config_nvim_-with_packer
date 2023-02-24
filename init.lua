@@ -26,7 +26,7 @@ return require('packer').startup(function(use)
         'hrsh7th/cmp-path',
         'hrsh7th/cmp-cmdline',
         'hrsh7th/nvim-cmp',
-        'windwp/nvim-autopairs',
+        --[[ 'windwp/nvim-autopairs', ]]
         'L3MON4D3/LuaSnip',
         'saadparwaiz1/cmp_luasnip',
         'nvim-lualine/lualine.nvim',
@@ -58,6 +58,7 @@ return require('packer').startup(function(use)
         'MunifTanjim/nui.nvim',
         'williamboman/mason-lspconfig.nvim',
         --[[ 'petertriho/cmp-git' ]]
-        'preservim/tagbar',
+        'preservim/tagbar', 
+        'jiangmiao/auto-pairs'
     }
 end)
