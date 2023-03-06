@@ -13,6 +13,7 @@ require 'plugins/treesitter'
 require 'plugins/colorizer'
 require 'plugins/lsp'
 require 'plugins/neotree'
+require 'plugins/tagbar'
 
 vim.cmd [[color tokyonight]]
 
