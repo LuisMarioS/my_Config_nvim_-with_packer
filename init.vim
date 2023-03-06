@@ -1,5 +1,7 @@
--- Welcome to me init
 
+let g:tagbar_width = max([22, winwidth(0) / 5])
+
+lua << EOF
 require 'settings'
 require 'launcher'
 require 'shortcupt'
@@ -62,3 +64,4 @@ return require('packer').startup(function(use)
         'jiangmiao/auto-pairs'
     }
 end)
+EOF
